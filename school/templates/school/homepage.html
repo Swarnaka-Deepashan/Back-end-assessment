@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .btn-primary {
+            margin-top: 20px; 
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ASSESSMENT</h1>
+
+        <!-- Buttons -->
+
+        <a href="{% url 'schools' %}" class="btn btn-primary">schools table</a>
+
+        <a href="{% url 'assessment_areas' %}" class="btn btn-primary">assessment_areas table</a>
+
+        <a href="{% url 'awards' %}" class="btn btn-primary">awards table</a>
+
+        <a href="{% url 'student_class' %}" class="btn btn-primary">Class table</a>
+
+        <a href="{% url 'student' %}" class="btn btn-primary">student table</a>
+
+        <a href="{% url 'subject' %}" class="btn btn-primary">subject table</a>
+
+        <a href="{% url 'answers' %}" class="btn btn-primary">answers table</a>
+
+        <a href="{% url 'summery' %}" class="btn btn-primary">summery table</a>
+
+
+    </div>
+</body>
+</html>
